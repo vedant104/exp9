@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OOP Prac</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px grey;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to My Website</h1>
+
+        <p>This website uses HTML, CSS and JavaScript.</p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Hello! Welcome to my website.";
+        }
+    </script>
+
+</body>
+</html>
